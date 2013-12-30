@@ -30,9 +30,10 @@ object MessageWorker {
     }
 
     def doWork(task: String) {
-      for (char <- task
-          if char.equals(".")) {
+      for (char <- task) {
+        if (char.equals('.'))  {
             Thread.sleep(1000)
+        }
       }
 
 
